@@ -1,0 +1,8 @@
+services:
+  mhd-channel:
+    build: .
+    image: mhd-channel:latest
+    container_name: mhd-channel
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
